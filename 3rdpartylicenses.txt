@@ -732,6 +732,12 @@ MIT
 intersection-observer
 W3C-20150513
 
+ngx-clipboard
+MIT
+
+ngx-window-token
+MIT
+
 regenerator-runtime
 MIT
 MIT License
