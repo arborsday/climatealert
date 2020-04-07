@@ -1,0 +1,29 @@
+/* Color Theme Swatches in Hex */
+$Colourful-lottery-balls-in-a-machine-1-hex: #d90416;
+$Colourful-lottery-balls-in-a-machine-2-hex: #8784d9;
+$Colourful-lottery-balls-in-a-machine-3-hex: #2e2e40;
+$Colourful-lottery-balls-in-a-machine-4-hex: #0439d9;
+$Colourful-lottery-balls-in-a-machine-5-hex: #f25c05;
+
+/* Color Theme Swatches in RGBA */
+$Colourful-lottery-balls-in-a-machine-1-rgba: rgba(216, 4, 22, 1);
+$Colourful-lottery-balls-in-a-machine-2-rgba: rgba(135, 132, 216, 1);
+$Colourful-lottery-balls-in-a-machine-3-rgba: rgba(46, 45, 63, 1);
+$Colourful-lottery-balls-in-a-machine-4-rgba: rgba(4, 57, 216, 1);
+$Colourful-lottery-balls-in-a-machine-5-rgba: rgba(242, 91, 4, 1);
+
+/* Color Theme Swatches in HSLA */
+$Colourful-lottery-balls-in-a-machine-1-hsla: hsla(354, 96, 43, 1);
+$Colourful-lottery-balls-in-a-machine-2-hsla: hsla(241, 52, 68, 1);
+$Colourful-lottery-balls-in-a-machine-3-hsla: hsla(241, 16, 21, 1);
+$Colourful-lottery-balls-in-a-machine-4-hsla: hsla(225, 96, 43, 1);
+$Colourful-lottery-balls-in-a-machine-5-hsla: hsla(22, 96, 48, 1);
+
+:root {
+  // palette
+  --primary: #d90416;
+  --secondary: #8784d9;
+  --tertiary: #2e2e40;
+  --quaternary: #0439d9;
+  --quinary: #f25c05;
+}

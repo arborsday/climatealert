@@ -1,0 +1,66 @@
+@import "~@nebular/theme/styles/global/breakpoints";
+nb-layout-header {
+  ::ng-deep {
+    nav {
+      background-color: #000000;
+      box-shadow: none;
+    }
+    g,
+    span,
+    nb-icon {
+      color: #ffffff;
+
+      &:hover {
+        color: #ffe0e0;
+      }
+    }
+    span.menu-title {
+      font-family: Arial;
+      font-size: 16px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.75;
+      letter-spacing: normal;
+    }
+  }
+}
+
+nb-sidebar {
+  background-color: #1d1d1d;
+
+  &.expanded {
+    ::ng-deep > div.main-container.main-container-fixed {
+      @include media-breakpoint-down(is) {
+        width: 100%;
+      }
+      > div.scrollable {
+        padding: 0;
+      }
+    }
+
+    @include media-breakpoint-down(is) {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+    @include media-breakpoint-up(xl) {
+      display: none;
+    }
+  }
+}
+
+nb-layout-column {
+  padding: 0 !important;
+}
+
+nb-layout-footer {
+  box-shadow: none;
+  overflow: hidden;
+}
+
+nb-layout-footer ::ng-deep > nav {
+  padding: 0 !important;
+  box-shadow: none;
+  border-top-width: 0 !important;
+}

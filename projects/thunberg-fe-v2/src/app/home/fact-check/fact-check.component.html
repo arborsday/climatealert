@@ -1,0 +1,32 @@
+<div #wrapper class="wrapper d-flex flex-column flex-sm-row pt-5 pb-5">
+  <div *ngFor="let item of data" class="m-auto">
+    <nb-card class="video">
+      <nb-card-body>
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            [src]="sanitize(item.video)"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </nb-card-body>
+      <nb-card-footer class="d-flex justify-content-between">
+        <h5>{{ item.org }}</h5>
+        <p>{{ item.createdDate }}</p>
+      </nb-card-footer>
+    </nb-card>
+    <nb-card class="text">
+      <nb-card-header
+        ><h4>{{ item.articleTitle }}</h4>
+        <h5>{{ item.author }}</h5></nb-card-header
+      >
+      <nb-card-body>{{ item.content }} </nb-card-body>
+      <nb-card-footer>
+        READ MORE
+      </nb-card-footer>
+    </nb-card>
+  </div>
+</div>

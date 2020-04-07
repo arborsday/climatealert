@@ -1,0 +1,21 @@
+@import "~@nebular/theme/styles/global/breakpoints";
+
+nb-sidebar {
+  &.expanded {
+    overflow: hidden;
+    ::ng-deep > div.main-container {
+      @include media-breakpoint-down(is) {
+        width: 100%;
+      }
+    }
+
+    @include media-breakpoint-down(is) {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+    @include media-breakpoint-up(xl) {
+      display: none;
+    }
+  }
+}

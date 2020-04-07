@@ -1,0 +1,8 @@
+.o-0 {
+  opacity: 0;
+}
+.o-laptop-1 {
+  @include media(laptop) {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,52 @@
+nb-card {
+  border: 0;
+  nb-card-body {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  > nb-card-body,
+  > nb-card-footer {
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.climate {
+    background-image: url("~/assets/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    > nb-card-header {
+      border-radius: 0;
+      background-color: #ff0000;
+      font-family: "Montserrat", sans-serif;
+      font-size: 24px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+      color: #ffffff;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+  }
+}
+
+.fact,
+.data-v,
+.take-action {
+  > nb-card-header {
+    background-color: #797979;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+}

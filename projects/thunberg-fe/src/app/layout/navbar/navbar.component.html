@@ -1,0 +1,27 @@
+<nb-actions class="d-xl-none-up">
+  <nb-action
+    icon="menu-2-outline"
+    title="menu"
+    (click)="toggleSidebar()"
+  ></nb-action>
+</nb-actions>
+
+<section class="lg-center-down">
+  <nb-menu [items]="menuItems" class="text-uppercase text-nowrap"
+    >climate alert
+  </nb-menu>
+  <!-- <nb-actions>
+    <nb-action [title]="'climate alert' | titlecase" link="/">
+      {{ "climate alert" | titlecase }}
+    </nb-action>
+  </nb-actions> -->
+</section>
+
+<nb-menu [items]="items" class="d-lg-none-down xl-center-up nav-menu">
+</nb-menu>
+
+<!-- <nb-actions class="d-lg-none-down xl-center-up nav-menu">
+  <nb-action *ngFor="let item of items" [title]="item.title" [href]="item.url">
+    {{ item.title }}
+  </nb-action>
+</nb-actions> -->

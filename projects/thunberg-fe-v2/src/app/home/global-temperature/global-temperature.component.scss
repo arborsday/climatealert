@@ -1,0 +1,382 @@
+@import "~@nebular/theme/styles/global/breakpoints";
+
+h3 {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+
+  margin-top: 25px;
+  margin-bottom: 15px;
+
+  > nb-icon {
+    color: #900000;
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+  }
+}
+
+div.global-temp {
+  > div {
+    > span:first-child {
+      font-family: "Montserrat", sans-serif;
+      font-size: 9px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.22;
+      letter-spacing: normal;
+      text-align: center;
+      color: #000000;
+      text-transform: capitalize;
+      @include media-breakpoint-up(md) {
+        font-size: 16px;
+      }
+    }
+
+    > span:nth-child(2) {
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.96;
+      letter-spacing: normal;
+      text-align: center;
+      color: #000000;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      @include media-breakpoint-up(md) {
+        font-size: 40px;
+      }
+      > span.arrow {
+        font-family: Arial;
+        color: #ff0000;
+        font-size: 20px;
+        vertical-align: top;
+        margin-right: 5px;
+        @include media-breakpoint-up(md) {
+          font-size: 32px;
+        }
+      }
+      > span.unit {
+        font-size: 20px;
+        margin-left: 5px;
+        @include media-breakpoint-up(md) {
+          font-size: 32px;
+        }
+      }
+    }
+
+    > span:last-child {
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.2;
+      letter-spacing: normal;
+      text-align: center;
+      color: #c40000;
+      text-transform: capitalize;
+      @include media-breakpoint-up(md) {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+div.tipping {
+  > .tipping-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    text-transform: capitalize;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    @include media-breakpoint-up(md) {
+      font-size: 20px;
+    }
+  }
+
+  > .tipping-items {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.21;
+    letter-spacing: normal;
+    text-align: center;
+    color: #900000;
+    margin-top: 24px;
+    margin-bottom: 25px;
+    @include media-breakpoint-up(md) {
+      font-size: 24px;
+    }
+  }
+}
+
+input[type="range"].slider {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+  height: 110%;
+}
+
+.slider-wrapper {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  @include media-breakpoint-up(md) {
+    height: 40px;
+  }
+
+  &::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #000000;
+    position: absolute;
+    transform: translateX(-100%);
+    @include media-breakpoint-up(md) {
+      width: 13px;
+      height: 13px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    transform: translateX(100%);
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #000000;
+    @include media-breakpoint-up(md) {
+      border-top: 13px solid transparent;
+      border-bottom: 13px solid transparent;
+      border-left: 13px solid #000000;
+    }
+  }
+}
+
+input[type="range"].slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+
+  border-radius: 6px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.36);
+  border: solid 1px #900000;
+  background-color: #ffffff;
+  cursor: pointer;
+  width: 62px;
+  height: 20px;
+  @include media-breakpoint-up(md) {
+    width: 120px;
+    height: 40px;
+  }
+}
+
+.thumb {
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.15;
+  letter-spacing: normal;
+  text-align: center;
+  color: #900000;
+  position: absolute;
+  pointer-events: none;
+  width: 62px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+    width: 120px;
+    height: 40px;
+  }
+}
+
+input[type="range"].slider:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type="range"].slider::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type="range"]::-moz-range-thumb {
+  border-radius: 6px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.36);
+  border: solid 1px #900000;
+  background-color: #ffffff;
+  cursor: pointer;
+  width: 62px;
+  height: 20px;
+  @include media-breakpoint-up(md) {
+    width: 120px;
+    height: 40px;
+  }
+}
+
+input[type="range"]::-ms-thumb {
+  border-radius: 6px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.36);
+  border: solid 1px #900000;
+  background-color: #ffffff;
+  cursor: pointer;
+  width: 62px;
+  height: 20px;
+  @include media-breakpoint-up(md) {
+    width: 120px;
+    height: 40px;
+  }
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  cursor: pointer;
+  background-color: #000;
+  height: 3px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background-color: #000;
+}
+
+input[type="range"]::-moz-range-track {
+  cursor: pointer;
+  background-color: #000;
+  height: 3px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="range"]::-ms-track {
+  cursor: pointer;
+  background-color: #000;
+  height: 3px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="range"]::-ms-fill-lower {
+  cursor: pointer;
+  background-color: #000;
+  height: 3px;
+  display: flex;
+  align-items: center;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background-color: #000;
+}
+input[type="range"]::-ms-fill-upper {
+  cursor: pointer;
+  background-color: #000;
+  height: 3px;
+  display: flex;
+  align-items: center;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background-color: #000;
+}
+
+.content {
+  .message {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+  }
+
+  > .climate {
+    @include media-breakpoint-up(xl) {
+      max-width: 500px;
+    }
+
+    > nb-card-header {
+      font-family: "Montserrat", sans-serif;
+      font-size: 28px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: italic;
+      line-height: 1.57;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ff0000;
+    }
+
+    > nb-card-body {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: #000000;
+    }
+
+    button {
+      border: none;
+      width: 352px;
+      height: 48px;
+      border-radius: 4px;
+      background-color: #900000;
+
+      font-family: Arial;
+      font-size: 16px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.75;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+}
+
+.graph {
+  background: #fff;
+}

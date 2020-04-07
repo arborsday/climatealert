@@ -1,0 +1,132 @@
+<carousel [interval]="$any(false)">
+    <slide>
+      <div
+        class="d-flex pt-5 pb-5 flex-column flex-xl-row justify-content-xl-around"
+      >
+        <div class="p-xl-3">
+          <h3 class="text-capitalize global-title">
+            global average temperature
+            <nb-icon icon="info"></nb-icon>
+          </h3>
+  
+          <div class="global-temp d-flex justify-content-around">
+            <div class="d-flex flex-column align-items-center">
+              <span>since 1966</span>
+              <span
+                ><span class="arrow">↑</span>{{ left
+                }}<span class="unit">℃</span></span
+              >
+              <span>endangered</span>
+            </div>
+            <div class="d-flex flex-column">
+              <span>average</span>
+              <span
+                ><span class="arrow">↑</span>{{ avg
+                }}<span class="unit">℃</span></span
+              >
+              <span>endangered</span>
+            </div>
+            <div class="d-flex flex-column">
+              <span>since 1750</span>
+              <span
+                ><span class="arrow">↑</span>{{ right
+                }}<span class="unit">℃</span></span
+              >
+              <span>endangered</span>
+            </div>
+          </div>
+  
+          <div class="tipping">
+            <div class="tipping tipping-title">tipping point</div>
+            <div class="tipping tipping-items">
+              <span>Nov. 2030</span>
+              <span>Nov. 2025</span>
+              <span>Nov. 2020</span>
+            </div>
+          </div>
+  
+          <div class="slider-wrapper position-relative">
+            <input
+              #slider
+              class="slider"
+              type="range"
+              min="1880"
+              max="2019"
+              step="1"
+              value="1880"
+              (input)="updateSlider($event)"
+              [(ngModel)]="year"
+            />
+            <div #thumb class="thumb">{{ year }}</div>
+          </div>
+  
+          <h3 class="text-capitalize">which trend is most applicable?</h3>
+          <ngx-charts-line-chart
+            class="d-flex justify-content-center graph"
+            [view]="$any(view)"
+            [scheme]="colorScheme"
+            [legend]="legend"
+            [showXAxisLabel]="showXAxisLabel"
+            [showYAxisLabel]="showYAxisLabel"
+            [xAxis]="xAxis"
+            [yAxis]="yAxis"
+            [xAxisLabel]="xAxisLabel"
+            [yAxisLabel]="yAxisLabel"
+            [timeline]="timeline"
+            [results]="multi"
+          >
+          </ngx-charts-line-chart>
+        </div>
+  
+        <div class="content d-flex flex-column pt-3 p-xl-3">
+          <nb-card class="climate">
+            <nb-card-header class="text-capitalize text-align-center">
+              <h3 class="message d-flex flex-column flex-lg-row flex-xl-column">
+                <span>Our Earth is Burning!&nbsp;</span>
+                <span>Why Are We So Indifferent?</span>
+              </h3>
+            </nb-card-header>
+            <nb-card-header class="text-capitalize text-align-center"
+              >It’s Getting <span>Real & Faster.</span></nb-card-header
+            >
+            <nb-card-body
+              >Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry’s standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of type
+              and scrambled it to make a type specimen book. It has survived not
+              only five centuries, but also the leap into electronic typesetting,
+              remaining essentially unchanged. It was popularised in the 1960s
+              with the release of Letraset sheets containing Lorem Ipsum passages,
+              and more recently with desktop publishing software like Aldus
+              PageMaker including versions of Lorem Ipsum.
+            </nb-card-body>
+            <!-- <nb-card-footer class="d-flex justify-content-center">
+              <button nbButton>CHECK OUT YOUR LOCATION</button>
+            </nb-card-footer> -->
+          </nb-card>
+        </div>
+      </div>
+    </slide>
+    <slide>
+      <div class="slide-wrapper">
+        <ngx-charts-line-chart
+          class="d-flex justify-content-center graph"
+          [view]="$any(view)"
+          [scheme]="colorScheme"
+          [legend]="legend"
+          [showXAxisLabel]="showXAxisLabel"
+          [showYAxisLabel]="showYAxisLabel"
+          [yScaleMax]="$any(500)"
+          [yScaleMin]="$any(300)"
+          [xAxis]="xAxis"
+          [yAxis]="yAxis"
+          xAxisLabel="year"
+          yAxisLabel="CO2(ppm)"
+          [timeline]="timeline"
+          [results]="co2data"
+        >
+        </ngx-charts-line-chart>
+      </div>
+    </slide>
+  </carousel>
+  

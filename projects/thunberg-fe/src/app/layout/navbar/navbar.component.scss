@@ -1,0 +1,93 @@
+@import "~@nebular/theme/styles/global/breakpoints";
+
+nb-actions > nb-action {
+  border-left-width: 0;
+}
+
+nb-actions > nb-action.d-sm-none-down {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+nb-actions.d-xl-none-up {
+  @include media-breakpoint-up(xl) {
+    display: none;
+  }
+}
+
+nb-menu.d-lg-none-down {
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}
+
+section.lg-center-down {
+  @include media-breakpoint-down(lg) {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+nb-menu.xl-center-up {
+  @include media-breakpoint-up(xl) {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+nb-actions.nav-menu {
+  font-family: Arial;
+  font-size: 10px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: #ffffff;
+
+  nb-action {
+    &:hover {
+      color: #ffe0e0;
+      cursor: pointer;
+    }
+  }
+}
+
+nb-menu.nav-menu ::ng-deep {
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      border: 0;
+      span {
+        font-family: Arial;
+        font-size: 10px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        color: #ffffff;
+
+        &:hover {
+          color: #ffe0e0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

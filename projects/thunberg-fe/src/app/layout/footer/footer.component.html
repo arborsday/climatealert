@@ -1,0 +1,201 @@
+<footer class="d-flex d-xl-flex-row-up">
+  <nb-card class="sub mr-xl-3">
+    <!-- <nb-card-header>Subscribe Weekly Newsletter via Email</nb-card-header>
+    <nb-card-body>
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+    </nb-card-body>
+    <nb-card-footer class="d-flex justify-content-between">
+      <input type="text" name="email" placeholder="Email Address" />
+      <button>SUBSCRIBE</button>
+    </nb-card-footer> -->
+    <nb-card-body>
+      <div
+        id="stb_subscribe"
+        style="background: transparent; border: 0; padding: 0;"
+      >
+        <form
+          action="https://stibee.com/api/v1.0/lists/7SQJQlE8bW7rT81LYw2c2FVvgcE2/public/subscribers"
+          method="POST"
+          target="_blank"
+          accept-charset="utf-8"
+          class="stb_form"
+          name="stb_subscribe_form"
+          id="stb_subscribe_form"
+          novalidate=""
+        >
+          <h1
+            class="stb_form_title"
+            style="
+              font-family: Arial;
+              font-size: 14px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.14;
+              letter-spacing: normal;
+              text-align: left;
+              color: #000000;
+            "
+          >
+            Subscribe Weekly Newsletter via Email
+          </h1>
+          <div
+            style="
+              font-family: Arial;
+              font-size: 14px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.71;
+              letter-spacing: normal;
+              text-align: left;
+              padding-bottom: 30px;
+              color: #000000;
+            "
+          >
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia
+          </div>
+          <fieldset class="stb_form_set" style="display: flex;">
+            <!-- <label for="stb_email" class="stb_form_set_label"
+              >Email Address</label
+            > -->
+            <div class="d-flex">
+              <input
+                type="email"
+                class="stb_form_set_input mr-3"
+                id="stb_email"
+                name="email"
+                placeholder="Email Address"
+              />
+              <button
+                type="submit"
+                class="stb_form_submit_button"
+                id="stb_form_submit_button"
+                style="
+                  background-color: rgb(144, 0, 0);
+                  color: rgb(255, 255, 255);
+                "
+              >
+                Subscribe
+              </button>
+            </div>
+          </fieldset>
+          <div class="stb_form_msg_error" id="stb_email_error"></div>
+          <!-- <div class="stb_form_policy">
+            <label>
+              <input type="checkbox" id="stb_policy" value="stb_policy_true" />
+              <button id="stb_form_modal_open" type="button">
+                Agree to terms of privacy policy
+              </button>
+            </label>
+            <div class="stb_form_msg_error" id="stb_policy_error"></div>
+            <div
+              class="stb_form_modal stb_form_policy_text blind"
+              id="stb_form_modal"
+            >
+              <div class="stb_form_modal_body">
+                <h1 class="stb_form_modal_title">개인정보 수집 및 이용</h1>
+                <p class="stb_form_modal_text">
+                  뉴스레터 발송을 위한 최소한의 개인정보를 수집하고 이용합니다.
+                  수집된 정보는 발송 외 다른 목적으로 이용되지 않으며, 서비스가
+                  종료되거나 구독을 해지할 경우 즉시 파기됩니다.
+                </p>
+                <div class="stb_form_modal_btn">
+                  <button id="stb_form_modal_close" type="button">닫기</button>
+                </div>
+              </div>
+              <div class="stb_form_modal_bg" id="stb_form_modal_bg"></div>
+            </div>
+          </div> -->
+          <!-- <div class="stb_form_result" id="stb_form_result"></div>
+          <fieldset class="stb_form_set_submit">
+            <button
+              type="submit"
+              class="stb_form_submit_button"
+              id="stb_form_submit_button"
+              style="
+                background-color: rgb(144, 0, 0);
+                color: rgb(255, 255, 255);
+              "
+            >
+              Subscribe
+            </button>
+          </fieldset> -->
+        </form>
+      </div>
+    </nb-card-body>
+  </nb-card>
+
+  <div class="d-flex d-sm-flex-row-up flex-1 justify-content-xl-around">
+    <nb-card class="share mr-md-5">
+      <nb-card-header>Share or Follow</nb-card-header>
+      <nb-card-body>
+        <nb-actions size="tiny">
+          <nb-action
+            icon="twitter"
+            title="twitter"
+            href="https://twitter.com/explore"
+          ></nb-action>
+          <nb-action
+            icon="facebook"
+            title="facebook"
+            href="https://www.facebook.com/"
+          ></nb-action>
+          <nb-action
+            [icon]="{ icon: 'instagram', pack: 'brands' }"
+            title="instagram"
+            href="https://www.instagram.com/"
+          ></nb-action>
+          <nb-action
+            [icon]="{ icon: 'google-plus-g', pack: 'brands' }"
+            title="google"
+            href="https://www.google.com/"
+          ></nb-action>
+          <nb-action
+            [icon]="{ icon: 'link', pack: 'solid' }"
+            title="globe"
+            link="/"
+          ></nb-action>
+        </nb-actions>
+        <p class="share-bottom">You can Share Everywhere for Free.</p>
+      </nb-card-body>
+    </nb-card>
+
+    <nb-card class="contact">
+      <nb-card-header>Contact</nb-card-header>
+      <nb-card-body class="d-flex flex-column">
+        <span>
+          We were born to do this project. :)
+        </span>
+        <span class="d-flex flex-column pt-3">
+          <span>Haemin Kim / Designer</span>
+          <span class="email">arborsday@gmail.com</span>
+        </span>
+        <span class="d-flex flex-column pt-3">
+          <span>EuiHyuk Lee / Developer </span>
+          <span class="email">3rdworldstrawberry@gamil.com</span>
+        </span>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</footer>
+
+<section class="bot-nav d-flex position-relative align-items-center">
+  <section class="d-flex is-center-down">
+    <nb-menu [items]="menuItems" class="climate-text text-uppercase text-nowrap"
+      >climate alert
+    </nb-menu>
+  </section>
+  <!-- <nb-actions class="d-lg-none-down xl-center-up nav-menu">
+    <nb-action *ngFor="let item of items" [title]="item.title"
+      >{{ item.title }}
+    </nb-action>
+  </nb-actions> -->
+  <nb-menu [items]="items" class="d-lg-none-down xl-center-up nav-menu">
+  </nb-menu>
+
+  <nb-actions class="ml-auto">
+    <nb-action class="arrow-upward" icon="arrow-upward" href="#"></nb-action>
+  </nb-actions>
+</section>

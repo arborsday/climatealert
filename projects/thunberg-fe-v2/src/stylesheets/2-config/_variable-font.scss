@@ -1,0 +1,16 @@
+:root {
+  --ratio: .3;
+  --vw: #{varvw(--ratio)};
+
+  --font-size: 1rem;
+  --font-weight: 400;
+  --font-color: #000;
+
+  // font size
+  --font-size-1: #{sum(--font-size, --vw)};
+  --font-size-2: #{sum(--font-size-1, --vw)};
+  --font-size-3: #{sum(--font-size-2, --vw)};
+  --font-size-4: #{sum(--font-size-3, --vw)};
+  --font-size-5: #{sum(--font-size-4, --vw)};
+  --font-size-6: #{sum(--font-size-5, --vw)};
+}

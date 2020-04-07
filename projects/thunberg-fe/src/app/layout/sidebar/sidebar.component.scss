@@ -1,0 +1,25 @@
+nb-card {
+  border-width: 0;
+}
+
+nb-card-body {
+  background-color: #1d1d1d;
+  padding-left: 1.5rem + 1.25rem;
+  > nb-menu ::ng-deep > ul > li {
+    border-bottom-width: 0;
+    margin-bottom: 16px;
+    span {
+      color: #ffffff;
+      font-family: Arial;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.75;
+      letter-spacing: normal;
+      &:hover {
+        color: #ffe0e0;
+      }
+    }
+  }
+}

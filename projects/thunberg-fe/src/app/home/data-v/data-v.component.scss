@@ -1,0 +1,121 @@
+@import "~@nebular/theme/styles/global/breakpoints";
+
+.video-container {
+  position: relative;
+
+  padding-top: 358.25%;
+  height: 0;
+  overflow: hidden;
+  @include media-breakpoint-up(sm) {
+    padding-top: 224.25%;
+  }
+  @include media-breakpoint-up(md) {
+    padding-top: 175.25%;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 93.25%;
+  }
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  overflow-x: auto;
+}
+.wrapper > div {
+  flex: 1;
+  > .video {
+    padding: 0;
+    > nb-card-body {
+      padding: 0;
+    }
+    > nb-card-footer {
+      padding-top: 0;
+      padding-bottom: 0;
+      > h5 {
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        text-align: left;
+        color: #900000;
+      }
+
+      > p {
+        font-family: Arial;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: 2;
+        letter-spacing: normal;
+        text-align: right;
+        color: #900000;
+      }
+    }
+  }
+
+  > .text {
+    > nb-card-header {
+      padding-top: 0;
+      padding-bottom: 0;
+      > h4 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000000;
+      }
+      > h5 {
+        font-family: Arial;
+        font-size: 12px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #900000;
+      }
+    }
+
+    > nb-card-body {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.22;
+      letter-spacing: normal;
+      text-align: left;
+      color: #000000;
+    }
+
+    > nb-card-footer {
+      font-family: Arial;
+      font-size: 12px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2;
+      letter-spacing: normal;
+      text-align: right;
+      color: #900000;
+    }
+  }
+}

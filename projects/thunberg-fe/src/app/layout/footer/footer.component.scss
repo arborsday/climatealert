@@ -1,0 +1,365 @@
+@import "~@nebular/theme/styles/global/breakpoints";
+
+:host ::ng-deep {
+  a,
+  svg,
+  span {
+    color: #fff !important;
+  }
+}
+
+:host ::ng-deep {
+  a:hover,
+  svg:hover,
+  span:hover {
+    color: #ffe0e0 !important;
+  }
+}
+
+nb-actions > nb-action {
+  border-left-width: 0;
+}
+
+section.bot-nav {
+  background: #000;
+  height: 70px;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+}
+
+footer {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+nb-actions > nb-action.d-sm-none-down {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+nb-actions.d-xl-none-up {
+  @include media-breakpoint-up(xl) {
+    display: none;
+  }
+}
+
+nb-actions.d-lg-none-down {
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}
+
+section.is-center-down {
+  @include media-breakpoint-down(is) {
+    position: absolute;
+    left: 0;
+    right: 20%;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+nb-actions.xl-center-up {
+  left: -1.25rem;
+  @include media-breakpoint-up(xl) {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+nb-action.arrow-upward {
+  width: 120px;
+  height: 70px !important;
+  background-color: #ff0000;
+  margin-right: -1.25rem;
+  display: flex;
+  justify-content: center;
+}
+
+.climate-text ::ng-deep {
+  span {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.75;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+  }
+}
+nb-actions.nav-menu {
+  font-family: Arial;
+  font-size: 10px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+:host {
+  background-color: #eaeaea;
+}
+
+footer {
+  padding: 1.25rem;
+}
+.sub {
+  width: 100%;
+  max-width: 400px;
+  nb-card-header {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+  }
+  nb-card-body {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  nb-card-footer {
+    input {
+      width: 176px;
+      @include media-breakpoint-up(md) {
+        width: 225px;
+      }
+      height: 40px;
+      border-radius: 4px;
+      border: solid 1px #900000;
+      background-color: #ffffff;
+
+      padding: 20px;
+      font-family: Arial;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.14;
+      letter-spacing: normal;
+      text-align: left;
+      color: #900000 !important;
+      &::placeholder {
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: left;
+        color: #900000 !important;
+      }
+    }
+
+    button {
+      width: 93px;
+      height: 40px;
+      border-radius: 4px;
+      background-color: #900000;
+
+      font-family: Arial;
+      font-size: 10px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.2;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      border: 0;
+    }
+  }
+}
+
+fieldset.stb_form_set {
+  display: flex;
+  #stb_email.stb_form_set_input {
+    width: 176px;
+    @include media-breakpoint-up(md) {
+      width: 225px;
+    }
+    height: 40px;
+    border-radius: 4px;
+    border: solid 1px #900000;
+    background-color: #ffffff;
+
+    padding: 20px;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: left;
+    color: #900000 !important;
+    &::placeholder {
+      font-family: Arial;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.14;
+      letter-spacing: normal;
+      text-align: left;
+      color: #900000 !important;
+    }
+  }
+}
+
+.share {
+  nb-card-header {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    color: #000000;
+  }
+
+  nb-card-body {
+    nb-action {
+      padding: 5px;
+    }
+    nb-action:first-child {
+      padding-left: 0;
+    }
+    ::ng-deep {
+      a {
+        border: 1px solid #900000;
+        border-radius: 50%;
+        background: #fff;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      svg {
+        fill: #900000;
+      }
+      nb-icon {
+        color: #900000;
+      }
+    }
+
+    .share-bottom {
+      margin-top: 45px;
+      font-family: Arial;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.14;
+      letter-spacing: normal;
+      text-align: left;
+      color: #000000;
+    }
+  }
+}
+
+.contact {
+  nb-card-header {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+  }
+
+  nb-card-body {
+    span {
+      font-family: Arial;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.14;
+      letter-spacing: normal;
+      text-align: left;
+      color: #000000 !important;
+    }
+
+    span.email {
+      color: #900000 !important;
+    }
+  }
+}
+
+nb-menu.nav-menu ::ng-deep {
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      border: 0;
+      span {
+        font-family: Arial;
+        font-size: 10px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        color: #ffffff;
+
+        &:hover {
+          color: #ffe0e0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+nb-menu.xl-center-up {
+  @include media-breakpoint-up(xl) {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+nb-menu.d-lg-none-down {
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}

@@ -1,0 +1,47 @@
+@function varvw($var) {
+  @return #{"calc(var(" + $var + ") * 1vw)"};
+}
+
+@function varvh($var) {
+  @return #{"calc(var(" + $var + ") * 1vh)"};
+}
+
+@function varrem($var) {
+  @return #{"calc(var(" + $var + ") * 1rem)"};
+}
+
+@function varem($var) {
+  @return #{"calc(var(" + $var + ") * 1em)"};
+}
+
+@function varpx($var) {
+  @return #{"calc(var(" + $var + ") * 1px)"};
+}
+
+@function wRatio($var) {
+  @return #{"calc((var(" + $var + ") / var(--W)) * 100)"};
+}
+
+@function hRatio($var) {
+  @return #{"calc((var(" + $var + ") / var(--H)) * 100)"};
+}
+
+//sum, difference, product, quotient
+@function sum($a, $b) {
+  @return #{"calc(var(" + $a + ")  + var(" + $b + "))"};
+}
+
+@function product($a, $b) {
+  @return #{"calc(var(" + $a + ") * var(" + $b "))"};
+}
+
+@function ratio($a) {
+  $sum: sum(--font-size, --vw);
+  @return #{"calc(" + $sum + " * " + $a + ")"};
+}
+
+@mixin vendorPrefix($property, $value) {
+  @each $prefix in -webkit-, -moz-, -ms-, -o-, "" {
+    #{$prefix}#{$property}: $value;
+  }
+}

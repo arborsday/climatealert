@@ -1,0 +1,34 @@
+@import "~@nebular/theme/styles/theming";
+@import "~@nebular/theme/styles/themes/default";
+
+$nb-themes: nb-register-theme(
+  (
+    layout-background-color: transparent,
+    header-background-color: #000,
+    header-shadow: none,
+    header-text-color: #fff,
+    header-text-font-family: Arial,
+    footer-shadow: none,
+    footer-divider-width: 0,
+    footer-padding: 0,
+    sidebar-scrollbar-width: 0,
+    sidebar-scrollbar-color: transparent,
+    sidebar-scrollbar-background-color: transparent,
+    sidebar-shadow: none,
+    sidebar-background-color: #1d1d1d,
+    sidebar-padding: 0,
+    icon-primary-color: #900000,
+    menu-text-color: #fff,
+    menu-text-font-size: 16px,
+    menu-item-divider-width: 0,
+    text-primary-hover-color: #ffe0e0,
+    actions-divider-width: 0,
+    actions-text-color: #fff,
+    card-border-width: 0,
+    card-divider-width: 0,
+    card-background-color: transparent,
+    card-margin-bottom: 0
+  ),
+  default,
+  default
+);

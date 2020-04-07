@@ -1,0 +1,21 @@
+:root {
+  --W: 1920;
+  --H: 1080;
+
+  --aspect-ratio: calc(var(--H) / var(--W));
+  --width-ratio: calc(100vw / var(--W));
+  --height-ratio: calc(100vh / var(--H));
+
+  // media query breakpoints
+  // --breakpoint-mobile-S: #{$breakpoint-mobile-S};
+  // --breakpoint-mobile-M: #{$breakpoint-mobile-M};
+  // --breakpoint-mobile-L: #{$breakpoint-mobile-L};
+
+  // --breakpoint-tablet: #{$breakpoint-tablet};
+
+  // --breakpoint-laptop: #{$breakpoint-laptop};
+  // --breakpoint-laptop-L: #{$breakpoint-laptop-L};
+
+  // --breakpoint-desktop: #{$breakpoint-desktop};
+  // --breakpoint-desktop-4k: #{$breakpoint-desktop-4k};
+}

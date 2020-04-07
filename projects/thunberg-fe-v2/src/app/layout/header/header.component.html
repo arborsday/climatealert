@@ -1,0 +1,40 @@
+<nb-actions class="d-xl-none">
+  <nb-action
+    [icon]="{ icon: 'menu-2-outline', status: 'control' }"
+    title="menu"
+    (click)="toggleSidebar()"
+  ></nb-action>
+</nb-actions>
+
+<nb-menu [items]="homeItem" class="CLIMATE-ALERT text-uppercase mr-xl-auto"></nb-menu>
+<nb-actions class="d-none d-xl-flex">
+  <nb-action *ngFor="let item of items" [title]="item.title"
+    >{{ item.title }}
+  </nb-action>
+</nb-actions>
+
+<nb-actions class="ml-auto">
+  <nb-action
+    [icon]="{ icon: 'instagram', pack: 'brands', status: 'control' }"
+    title="instagram"
+    href="https://www.instagram.com"
+    class="d-none d-md-flex"
+  ></nb-action>
+  <nb-action
+    [icon]="{ icon: 'twitter', status: 'control' }"
+    title="twitter"
+    href="https://twitter.com"
+    class="d-none d-md-flex"
+  ></nb-action>
+  <nb-action
+    [icon]="{ icon: 'facebook', status: 'control' }"
+    title="facebook"
+    href="https://www.facebook.com"
+    class="d-none d-md-flex"
+  ></nb-action>
+  <nb-action
+    [icon]="{ icon: 'globe-americas', pack: 'solid', status: 'control' }"
+    title="globe"
+    link="/"
+  ></nb-action>
+</nb-actions>

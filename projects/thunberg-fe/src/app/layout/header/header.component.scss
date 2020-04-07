@@ -1,0 +1,11 @@
+@import "~@nebular/theme/styles/global/breakpoints";
+
+nb-actions > nb-action {
+  border-left-width: 0;
+}
+
+nb-actions > nb-action.d-sm-none-down {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}

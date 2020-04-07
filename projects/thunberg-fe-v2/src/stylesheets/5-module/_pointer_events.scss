@@ -1,0 +1,9 @@
+.pe-none {
+  pointer-events: none;
+}
+
+.pe-laptop-auto {
+  @include media(laptop) {
+    pointer-events: auto;
+  }
+}

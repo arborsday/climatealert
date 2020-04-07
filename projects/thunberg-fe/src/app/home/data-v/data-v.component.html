@@ -1,0 +1,16 @@
+<div #wrapper class="wrapper d-flex flex-row">
+  <div *ngFor="let item of data" class="m-auto">
+    <nb-card class="video">
+      <nb-card-body>
+        <div class="video-container">
+          <iframe
+            [src]="item.video | safe"
+            width="900"
+            height="700"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>

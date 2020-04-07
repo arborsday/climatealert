@@ -1,0 +1,12 @@
+a {
+  color: var(--secondary);
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #fff;
+}
+
+a.active {
+  color: var(--quinary);
+}

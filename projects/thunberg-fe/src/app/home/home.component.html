@@ -1,0 +1,62 @@
+<nb-card class="climate" id="climate">
+  <nb-card-header class="text-capitalize text-align-center"
+    >climate emergency now</nb-card-header
+  >
+  <nb-card-body>
+    <home-global-temperature></home-global-temperature>
+  </nb-card-body>
+</nb-card>
+
+<nb-card class="fact" id="fact">
+  <nb-card-header class="text-capitalize text-align-center"
+    >fact check</nb-card-header
+  >
+  <nb-card-body>
+    <home-fact-check></home-fact-check>
+  </nb-card-body>
+</nb-card>
+
+<nb-card class="take-action" id="take-action">
+  <nb-card-header class="text-capitalize text-align-center"
+    >take action</nb-card-header
+  >
+  <nb-card-body style="max-width: none;">
+    <div class="dialog" [ngClass]="{ 'dialog-on': isDialogOn }">
+      <button (click)="toggle()" class="close"></button>
+      <div class="wrapper2">
+      <div #cb class="card">
+          Hello, &lt;Broadcaster’s name&gt;<br /><br />
+          I am incredibly disappointed at the empty promises and acceptance of
+          collateral damage in the university’s response to the pandemic. The
+          original intent that students who would be safest at the university
+          would be given the opportunity to stay, but I have gone to residence
+          life and heard that those forms before the coronavirus form were “null
+          and void”. I am concerned about the lack of transparency in the
+          decision process; my friends and fellow students are being forced into
+          dangerous situations while others are allowed to stay seemingly at
+          random. I want to know the regulations being forced on the university
+          to handle this situation, and how the decisions are being made. One
+          student, PanPan Chen, has a respiratory disease and a sick mother back
+          from China, and is being sent home. I am not alone in asking for some
+          accountability in these sometimes life or death decisions. I can’t
+          stand by and let this happen with opaque denials and
+          government-induced helplessness, and I sincerely hope that you can’t
+          either. <br /><br />Sincerely, <br />&lt;Your name&gt;
+        </div>
+      </div>
+      <button (click)="copy(cb)" class="copy2">
+        COPY PROTEST for Email
+      </button>
+    </div>
+    <home-take-action class="wrapper2"></home-take-action>
+  </nb-card-body>
+</nb-card>
+
+<nb-card class="data-v" id="data-v">
+  <nb-card-header class="text-capitalize text-align-center"
+    >data visualization from NASA</nb-card-header
+  >
+  <nb-card-body>
+    <home-data-v></home-data-v>
+  </nb-card-body>
+</nb-card>

@@ -1,0 +1,5 @@
+.translateY-laptop-100 {
+  @include media(laptop) {
+    transform: translateY(100%);
+  }
+}

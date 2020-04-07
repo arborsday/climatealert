@@ -1,0 +1,33 @@
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-flex-end {
+  justify-content: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.d-sm-flex-row-up {
+  flex-direction: column;
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+}
+
+.d-xl-flex-row-up {
+  flex-direction: column;
+  @include media-breakpoint-up(xl) {
+    flex-direction: row;
+  }
+}
