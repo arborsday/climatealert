@@ -1,4 +1,4 @@
-ARG BASE_IMAGE_TAG=18-bullseye
+ARG BASE_IMAGE_TAG=16-bullseye
 
 FROM node:${BASE_IMAGE_TAG}
 
@@ -12,7 +12,7 @@ ENV LANG="C.UTF-8"
 ENV GOSU_VERSION="1.12"
 
 # Define some default variables
-ENV PORT="8080" \
+ENV PORT="4200" \
     HISTFILE="/config/.bash_history" \
     GIT_COMMITTER_NAME="Just some fake name to be able to git-clone" \
     GIT_COMMITTER_EMAIL="whatever@this-user-is-not-supposed-to-git-push.anyway" \
@@ -79,5 +79,5 @@ RUN ln -s /usr/local/bin/gosu-wrapper /usr/local/bin/bypass
 ENTRYPOINT ["gosu-wrapper", "npm-wrapper"]
 
 # The main command to run when the container starts is to start whatever the Procfile defines
-# ENTRYPOINT ["npx", "webpack", "serve"] # 如果 L84 有問題，可以改用這行試試看
-CMD ["ng", "build"]
+# ENTRYPOINT ["gosu-wrapper", "npm-wrapper", "bash"]
+CMD ["ng", "serve", "thunberg-fe", "--host", "0.0.0.0"]

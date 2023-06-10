@@ -2,7 +2,8 @@
 
 if [ -f package.json ]; then
   echo "Installing JS modules... "
-  npm ci
+  npm link @angular/cli
+  npm install
   echo "all good 👌"
 else
   echo "No package.json found. Skipping JS dependencies check."
