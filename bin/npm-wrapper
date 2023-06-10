@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ -f package.json ]; then
+  echo "Installing JS modules... "
+  npm ci
+  echo "all good 👌"
+else
+  echo "No package.json found. Skipping JS dependencies check."
+fi
+
+exec "$@"
