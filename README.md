@@ -1,3 +1,8 @@
+# FtO2023 23.06.11 (hm)
+https://arborsday.github.io/climatealert/
+> "thunberg-fe" folder source applied.
+
+- - -
 # ThunbergWorkspace
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
