@@ -16,6 +16,10 @@ export class TakeActionComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  get isDialogOn() {
+    return this.globalTemperatureService.isDialogOn;
+  }
+
   toggle() {
     this.globalTemperatureService.toggleDialog();
   }
