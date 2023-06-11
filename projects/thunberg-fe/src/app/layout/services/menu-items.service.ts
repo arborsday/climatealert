@@ -18,7 +18,7 @@ export class MenuItemsService {
     },
     {
       title: "ACTION",
-      url: "#take-action"
+      url: "/take-action"
     },
     {
       title: "CONTACT",

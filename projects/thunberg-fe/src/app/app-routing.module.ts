@@ -1,7 +1,10 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
+import { TakeActionComponent } from './take-action/take-action.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'take-action', component: TakeActionComponent },
+];
 
 @NgModule({
   imports: [

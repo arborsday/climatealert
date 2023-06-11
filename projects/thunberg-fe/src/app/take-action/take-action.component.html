@@ -1,0 +1,157 @@
+<nb-card class="take-action" id="take-action">
+  <nb-card-header class="text-capitalize text-align-center"
+    >take action</nb-card-header
+  >
+  <nb-card-body style="max-width: none;">
+    <div class="dialog" [ngClass]="{ 'dialog-on': isDialogOn }">
+      <button (click)="toggle()" class="close"></button>
+      <div class="wrapper2">
+      <div #cb class="card">
+          Hello!<br/>
+          I watch your weather news every morning.<br/>
+          <br/>
+          We are afraid.<br/>
+          Now, the climate crisis moments that have engulfed the world are really happening, and news is coming. We despair.
+          Every morning, I'm listening to the usual news, which feels like I'm ready for just a fine day.<br/>
+          <br/>
+          We wish.<br/>
+          I hope that people who are only running for economic growth will reduce carbon generation from energy right now.<br/>
+          <br/>
+          We demand.<br/>
+          I'm sure you've been broadcasting a lot of provocative content, but tomorrow's weather news doesn't avoid danger and disaster
+          Please report with active action plans.<br/>
+          <br/>
+          Please check the website below for details.<br/>
+          <a href="https://arborsday.github.io/climatealert/" target="_blank">https://arborsday.github.io/climatealert/</a><br/>
+          <br/>
+          Sincerely,,<br/>
+          One of member of only the earth.
+        </div>
+      </div>
+      <button (click)="copy(cb)" class="copy2">
+        COPY PROTEST for Email
+      </button>
+    </div>
+    <div class="wrapper2">
+    
+      <div #wrapper class="wrapper d-flex flex-column pt-5 pb-5">
+        <div>
+          <div class="d-flex">
+            <nb-card class="content">
+              <nb-card-header class="d-flex flex-column flex-xl-row"
+                ><span>Let’s Make Weather Caster </span
+                ><span>Speaks For Emergency!</span></nb-card-header
+              >
+
+              <nb-card-body>
+                <span #cb>Hello!<br/>
+                I watch your weather news every morning.<br/>
+                <br/>
+                We are afraid.<br/>
+                Now, the climate crisis moments that have engulfed the world are really happening, and news is coming. We despair.
+                Every morning, I'm listening to the usual news, which feels like I'm ready for just a fine day.<br/>
+                <br/>
+                We wish.<br/>
+                I hope that people who are only running for economic growth will reduce carbon generation from energy right now.<br/>
+                <br/>
+                We demand.<br/>
+                I'm sure you've been broadcasting a lot of provocative content, but tomorrow's weather news doesn't avoid danger and disaster
+                Please report with active action plans.<br/>
+                <br/>
+                Please check the website below for details.<br/>
+                <a href="https://arborsday.github.io/climatealert/" target="_blank">https://arborsday.github.io/climatealert/</a><br/>
+                <br/>
+                Sincerely,,<br/>
+                One of member of only the earth.<br/>
+                </span>
+              </nb-card-body>
+
+              <nb-card-footer
+                class="d-flex flex-column flex-md-row align-items-center"
+              >
+                <button (click)="toggle()" class="mr-3 mb-3">
+                  Preview PROTEST
+                </button>
+                <button (click)="copy(cb)" class="mr-3 mb-3">
+                  COPY PROTEST for Email
+                </button>
+                <button class="d-xl-none mr-3 mb-3">Use Auto Sender</button>
+              </nb-card-footer>
+            </nb-card>
+
+            <div class="form d-none d-xl-flex flex-column mr-auto ml-auto">
+              <form>
+                <!-- <input type="text" placeholder="Your Name" />
+                <input type="text" placeholder="Email Address" /> -->
+                <select>
+                  <option value="">Select Your Country</option>
+                  <option value="">South Korea</option>
+                  <option value="">test2</option>
+                  <option value="">test3</option>
+                </select>
+                <select>
+                  <option value="">Select Weather Casters</option>
+                  <option value="">Newstapa</option>
+                  <option value="">KBS Newsroom</option>
+                  <option value="">MBC Newsroom</option>
+                </select>
+                <button>Download Email Address</button>
+                <!-- <div>
+                  BY SIGNING THIS PETITION YOU AGREE TO THE TERMS OF PARTICIPATION AND
+                  <span>PRIVACY POLICY.</span>
+                </div> -->
+              </form>
+            </div>
+          </div>
+
+          <nb-card class="petition">
+            <nb-card-header>How Petitions Work</nb-card-header>
+            <nb-card-body>
+              <ul
+                class="d-flex flex-column flex-xl-row align align-items-center align-items-sm-start"
+              >
+                <li class="mt-4 d-flex flex-xl-column align-items-xl-center">
+                  <span class="style-type">1</span>Read a Protest
+                </li>
+                <li class="mt-4 d-flex flex-xl-column align-items-xl-center">
+                  <span class="style-type">2</span>
+                  <span class="d-xl-flex flex-xl-column align-items-xl-center">
+                    Paste to Your Email&nbsp;
+                    <span class="or">or&nbsp;</span> Use Auto Sender
+                  </span>
+                </li>
+                <li class="mt-4 d-flex flex-xl-column align-items-xl-center">
+                  <span class="style-type">3</span>Send It to Weather Casters!
+                </li>
+              </ul>
+            </nb-card-body>
+          </nb-card>
+        </div>
+        <div class="form d-flex d-xl-none flex-column">
+          <form class="d-flex flex-column align-items-center">
+            <!-- <input type="text" placeholder="Your Name" />
+            <input type="text" placeholder="Email Address" /> -->
+            <select>
+              <option value="">Select Your Country</option>
+              <option value="">test1</option>
+              <option value="">test2</option>
+              <option value="">test3</option>
+            </select>
+            <select>
+              <option value="">Select Weather Casters</option>
+              <option value="">test1</option>
+              <option value="">test2</option>
+              <option value="">test3</option>
+            </select>
+            <button>Download Email Address</button>
+            <!-- <div>
+              BY SIGNING THIS PETITION YOU AGREE TO THE TERMS OF PARTICIPATION AND
+              <span>PRIVACY POLICY.</span>
+            </div> -->
+          </form>
+        </div>
+      </div>
+    
+    </div>
+  </nb-card-body>
+</nb-card>
