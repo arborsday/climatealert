@@ -250,5 +250,7 @@
       }
     }
   },
-  "defaultProject": "thunberg-fe"
+  "cli": {
+    "analytics": false
+  }
 }

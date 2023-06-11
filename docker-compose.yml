@@ -1,0 +1,23 @@
+version: "3"
+volumes:
+  climatealert-app-sync:   { external: true }
+  node_modules:        { driver: local }
+  config:              { driver: local }
+services:
+  app:
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - ${WEB_PORT}:${WEB_PORT}
+      - 3040:3040
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - climatealert-app-sync:/app:nocopy
+      - node_modules:/app/node_modules
+      - config:/config
+    networks:
+      default:
+        aliases:
+          - climatealert

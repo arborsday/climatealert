@@ -1,0 +1,6 @@
+version: "2"
+syncs:
+  climatealert-app-sync:
+    src: ./
+    sync_excludes: [log, .git, node_modules]
+    sync_strategy: native_osx
